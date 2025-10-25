@@ -1,0 +1,32 @@
+
+:root{
+  --purple: #7d3cff;
+  --purple-dark: #5a28cc;
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --muted: #666;
+}
+
+*{box-sizing: border-box;}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+body{background:var(--bg);display:flex;align-items:center;justify-content:center;padding:20px;}
+
+.container{width:100%;max-width:420px;}
+.brand{text-align:center;margin-bottom:14px;}
+.brand h1{margin:0;color:var(--purple);font-size:28px;}
+.subtitle{margin:4px 0 0;color:var(--muted);font-size:13px;}
+
+.card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(40,30,60,0.06);}
+.hidden{display:none;}
+.greeting{margin:0 0 14px;font-weight:600;color:#222;}
+
+.buttons{display:flex;flex-direction:column;gap:10px;}
+.btn{background:transparent;border:2px solid var(--purple);color:var(--purple);padding:12px;border-radius:9px;font-size:15px;cursor:pointer;}
+.btn.primary{background:var(--purple);color:#fff;border-color:var(--purple);}
+.btn:active{transform:translateY(1px);}
+.btn:hover{background:var(--purple-dark);color:#fff;border-color:var(--purple-dark);}
+
+.status{margin-top:12px;color:var(--muted);font-size:14px;min-height:20px;}
+
+.footer{text-align:center;margin-top:12px;color:var(--muted);font-size:12px;}
+                                                                                        
