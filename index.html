@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PayPiMart</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Pi SDK (works in Pi Browser). If not in Pi Browser, login will fail gracefully. -->
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="brand">
+      <h1>PayPiMart</h1>
+      <p class="subtitle">Jembatan Pembayaran Pi – QRIS – WhatsApp</p>
+    </header>
+
+    <main class="card">
+      <div id="welcome">
+        <button id="login" class="btn primary">Login dengan Pi</button>
+      </div>
+
+      <div id="userArea" class="hidden">
+        <p class="greeting">Halo, <span id="username">—</span>! Silakan pilih metode pembayaran.</p>
+
+        <div class="buttons">
+          <button id="pay_qris" class="btn">Bayar via QRIS (Indomart / Alfamart)</button>
+          <button id="pay_wallet" class="btn">Bayar via Dompet Digital (DANA / OVO / GoPay)</button>
+          <button id="pay_wa" class="btn">Bayar Individu via WhatsApp</button>
+        </div>
+
+        <div id="status" class="status"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <small>Powered by OnRamp Money</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+            
